@@ -650,7 +650,7 @@
     </div>
 
     <script>
-        const API_URL = 'http://tc.sbtc-mng.com/api.php';
+        const API_URL = (window.location.protocol === 'https:') ? '/api/proxy' : 'http://tc.sbtc-mng.com/api.php';
         let devices = [];
         let sensorIntervals = {};
 
